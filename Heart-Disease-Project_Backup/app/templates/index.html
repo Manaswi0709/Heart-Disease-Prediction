@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Navigation</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="#" class="logo">CardioCheck</a>
+            <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Factors</a></li>
+            <li><a href="#services">More</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+         
+        <div class="banner-area" id="home">
+            <div class="centered-content">
+                <h1>Will Your Heart Get a Clean Bill of Health?</h1>
+                <a href="{{ url_for('home') }}" class="start-button">Check</a>
+            </div>
+        </div>
+        <div class="about-area" id="about">
+            <div class="text-part">
+            <h1>About</h1>
+                <p>Heart disease prediction is essential because cardiovascular diseases are among the leading causes of death worldwide. 
+                    Early prediction of heart disease can significantly reduce the risk by allowing timely intervention, lifestyle changes, and preventive treatments. 
+                    This not only improves the quality of life but also helps in reducing healthcare costs and the burden on medical facilities.
+                    <br>
+                    This application enables users to receive an initial assessment quickly and conveniently, empowering them to seek medical advice early if the risk is high. 
+                    It also aids healthcare providers in monitoring and managing patients more effectively by focusing on those at higher risk.
+                </p>
+            </div>
+        </div>
+        <div class="port-area" id="portfolio">
+            <div class="text-part">
+            <h1>Factors</h1>
+                <p >
+                    <ul style="font-size:19px;">
+                    <li>age: The age of the person in years. Heart disease risk often increases with age.</li>
+
+                    <li>sex: Gender of the person (1 for male, 0 for female). Gender differences impact heart disease risk, with men generally at higher risk at younger ages.</li>
+                    
+                    <li>Chest pain type :
+                    <ul>
+                        <li>Typical angina: Chest pain related to decreased blood flow to the heart.</li>
+                        <li>Atypical angina: Chest pain that doesn’t fit the typical pattern for angina.</li>
+                        <li>Non-anginal pain: Chest pain not associated with heart disease.</li>
+                        <li>Asymptomatic: No chest pain or symptoms, though there may still be heart disease. </li> 
+                    </ul><br>
+
+                    <li>Resting blood pressure : Higher values can indicate hypertension, a risk factor for heart disease.</li>
+                    
+                    <li>Serum cholesterol: Elevated cholesterol levels are associated with increased risk of heart disease.</li>
+                    
+                    <li>Fasting blood sugar : High fasting blood sugar levels may indicate diabetes, which is a risk factor for heart disease.</li>
+
+                    <li>restecg (resting electrocardiographic results):
+                        <ol>
+                        <li>Normal: Normal ECG readings.</li>
+                        <li>Having ST-T wave abnormality: Potential indicators of coronary heart disease or a past heart attack.</li>
+                        <li>Probable or definite left ventricular hypertrophy: A condition where the left ventricle is enlarged, often due to high blood pressure or heart disease.</li>
+                        </ol></li>
+                </ul>
+                     
+                </p>
+            </div>
+        </div>
+        <div class="service-area" id="services">
+            <div class="text-part">
+            <h1>More</h1>
+                <p> 
+                    <ul style="font-size:19px;">
+                    
+                    <li>Thalach (maximum heart rate achieved): The highest heart rate a person achieves during a stress test. Lower values during exercise might indicate heart disease.</li>
+                    
+                    <li>Exang (exercise-induced angina): Whether the person experiences angina (chest pain) induced by exercise (1 for yes, 0 for no). Exercise-induced angina is a common symptom of coronary artery disease.</li>
+                    
+                    <li>Oldpeak: ST depression induced by exercise relative to rest. This measures the difference in the ST segment on an ECG between exercise and rest. It indicates how much blood flow to the heart is affected during exercise, with higher values suggesting potential heart issues.</li>
+                    
+                    <li>Slope (slope of the peak exercise ST segment):
+                        <ol>
+                        <li>Upsloping: Often indicates a normal or less severe condition.</li>
+                        <li>Flat: May indicate a higher risk of heart disease.</li>
+                        <li>Downsloping: Associated with higher risk and is more often linked to heart disease.</li>
+                        </ol></li>
+                    <li>ca (number of major vessels colored by fluoroscopy): The number of major blood vessels (ranging from 0 to 3) visualized by fluoroscopy, a type of imaging. Higher values generally indicate healthier blood vessels, while lower values may indicate blockages.</li>
+                    
+                    <li>thal (thalassemia):
+                        <ol>
+                        <li>Normal: No abnormality in the thalassemia test.</li>
+                        <li>Fixed defect: There is a defect in the heart that does not change over time, possibly indicating scar tissue from past heart damage.</li>
+                        <li>Reversible defect: Defects that may change, indicating reduced blood flow that could be improved with treatment.</li>
+                        </ol></li>
+                    <li>target: The output variable, indicating whether the person has heart disease or not (1 = no heart disease, 2 = heart disease). This is the prediction goal of the model, helping assess heart disease risk based on the above factors.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <div class="contact-area" id="contact">
+            <div class="text-part">
+            <h1>Contact Area</h1>
+                <p>
+                    Ph no : 7794958946<br>
+                    email : abc@cardiocheck.com <br>
+                    Ph no : 9573257155<br>
+                    email : xyz@cardiocheck.com
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
